@@ -45,12 +45,6 @@ export default function Login({navigation } : any) {
         handleChange={(val) =>{setPassword(val)}}  
         secureTextEntry={true}      
         />
-        
-        {/* <TouchableOpacity style={{width:"100%"}} onPress={onSubmit}  >
-        <View style={styles.button}>
-            <Text style={styles.text}>Login</Text>
-        </View>
-        </TouchableOpacity> */}
         <CustomButton title='Login' onPress={onSubmit} />
         <CustomButton title='Post Data' onPress={() => navigation.navigate("Home")} />
      </View>
@@ -63,7 +57,6 @@ const styles = StyleSheet.create({
     container :{
         flex:1,
         justifyContent:'center',
-        // alignItems:'center',
         padding:10
     },
     card:{

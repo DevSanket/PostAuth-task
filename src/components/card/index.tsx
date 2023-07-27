@@ -2,14 +2,10 @@ import { View, Text,StyleSheet } from 'react-native'
 import React from 'react'
 import {NavigationProp, ParamListBase} from '@react-navigation/native';
 import CustomButton from '../button';
+import { Post_Props } from '../../constants/Props';
 
 
-interface Post_Props{
-    body:string;
-    userId:number;
-    id:number;
-    title:string;
-}
+
 
 interface IProps {
    item: Post_Props;
