@@ -16,16 +16,16 @@ export default function Post_Details({navigation,route} : any) {
     <View style={styles.container}>
         <BackButton navigation={navigation} />
       <View style={styles.card}>
-      <Text style={{fontWeight:"bold"}}>id :-  </Text><Text>
+      <Text style={styles.text}>id :-  </Text><Text>
       {id}
       </Text>
-      <Text style={{fontWeight:"bold"}}>User ID :-  </Text><Text>
+      <Text style={styles.text}>User ID :-  </Text><Text>
       {userId}
       </Text>
-      <Text style={{fontWeight:"bold"}}>Title :-  </Text><Text>
+      <Text style={styles.text}>Title :-  </Text><Text>
       {title}
       </Text>
-      <Text style={{fontWeight:"bold"}}>Body :- </Text>
+      <Text style={styles.text}>Body :- </Text>
       <Text>{body}</Text>
       </View>
     </View>
@@ -54,5 +54,8 @@ const styles = StyleSheet.create({
         position:"absolute",
         top:10,
         left:10
+    },
+    text:{
+      fontWeight:"bold"
     }
 })
